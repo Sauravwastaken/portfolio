@@ -12,8 +12,8 @@
       href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index-BXMx6i7l.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CRAs-uWk.css">
+    <script type="module" crossorigin src="./assets/index-BBBxw7fE.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-vkJFwZGW.css">
   </head>
   <body
     class="font-satoshi font-medium dark:bg-theme_white_dark dark:text-theme_black_dark"
@@ -21,12 +21,12 @@
     <span id="home"></span>
     <!-- ! Nav Bar -->
     <nav
-      class="flex justify-between w-full px-[13%] pt-8 pb-4 text-sm font-medium text-theme_black dark:text-theme_black_dark sticky -top-3 z-10 bg-white dark:bg-theme_white_dark sm:px-[6%]"
+      class="flex justify-between items-center w-full px-[13%] pt-8 pb-4 text-sm font-medium bg-white text-theme_black dark:text-theme_black_dark sticky -top-3 z-10 dark:bg-theme_white_dark sm:px-[6%] md:space-x-4 md:relative md:flex-col"
     >
       <p class="w-full text-base font-medium cursor-pointer">
         <a href="#home">Saurav</a>
       </p>
-      <ul class="flex justify-center gap-8 w-full md:hidden">
+      <ul id="nav_links" class="flex justify-center gap-8 w-full md:hidden">
         <li
           class="transition-all hover:text-theme_grey dark:hover:text-theme_grey_dark"
         >
@@ -51,7 +51,7 @@
       <div class="w-full text-right cursor-pointer flex justify-end">
         <p
           id="darkmode"
-          class="flex space-x-2 transition-all hover:text-theme_grey"
+          class="flex space-x-2 transition-all hover:text-theme_grey md:flex-none md:absolute md:right-[13%] md:space-x-0 md:top-8"
         >
           <svg
             class="hidden dark:block"
@@ -113,6 +113,25 @@
           </svg>
         </a> -->
       </div>
+
+      <svg
+        id="hamburger"
+        class="hidden md:block cursor-pointer md:flex-none md:absolute md:right-[6.5%]"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-menu"
+      >
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
     </nav>
 
     <!-- ! Hero Section -->
@@ -131,7 +150,10 @@
           I'm Saurav <br class="md:hidden" />
           Frontend web <br class="md:hidden" />Developer
         </h1>
-        <button class="btn">Get in touch</button>
+
+        <a href="#contact">
+          <button class="btn">Get in touch</button>
+        </a>
       </div>
       <div class="w-2/5 flex items-center md:w-4/5">
         <img
@@ -162,7 +184,9 @@
           possimus tempora esse dolores quam aliquam consectetur tempore quis!
           possimus tempora esse dolores quam aliquam consectetur tempore quis!
         </p>
-        <button class="btn !mx-0">Download CV</button>
+        <a href="Assets/Saurav CV.pdf" target="_blank">
+          <button class="btn !mx-0">Download CV</button>
+        </a>
       </div>
     </section>
 
